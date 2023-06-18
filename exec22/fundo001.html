@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        div.quadrado{
+            display: inline-block; /*coloca as box em linha*/
+            border:2px solid black; /* coloca borda preta na box*/
+            border-radius: 10px; /*Coloca curva nas boxe*/
+            background-color: lightgray;/*Coloca cinza de fundo*/
+            width: 300px;/*Largura da box*/
+            height: 300px; /*altura da box*/
+        }
+        div#q1{
+            background-color: skyblue;
+
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom,yellow, red );
+            /*DEGRADE Cor amarela na box de cima para baixo , mudando de amarelo para vermelho*/
+        }
+        div#q3{
+            background-image: url(imagens/pattern001.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
