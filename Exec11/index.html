@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem Dinâmicas</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplemente dimuna ou aumente tamanho</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="/html-css/desafiomodulo1/Imagem-p.png" type="image/png"/>
+        <source media="(max-width: 1050px)" srcset="/html-css/desafiomodulo1/Imagem-m.png" type="image/png"/>
+          <img src="/html-css/desafiomodulo1/Imagem-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender colocar audio no html</p>
+
+    <audio  preload="metadata"  controls loop>
+        <source src="media/happy-mistake.mp3" type="audio/mpeg" >
+    </audio>
+    <br>
+    <audio  preload="metadata"  controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg" >
+    </audio>
+</body> 
+</html> 
