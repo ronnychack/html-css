@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma,sans-serif;
+    --fonte2:'Bebas Neue', sans-serif;
+    --fonte3: 'Sriracha', sans-serif;
+}
+
 *{
     margin: 0px;/*Resetar as configurações padrões do html acaba ficando tudo junto*/
     padding: 0px; /*Resetar as configuraçoes padrões do html*/
+    font-size: 1em;/*Tamanho de fonte padrão*/
 }
 
 html, body{
     min-height: 100vh;/*Tamanho minimo da view port da altura como termina com h(110vh) é altura o w e largura */
     background-color: darkgray;/*Cor de fundo*/
+    font-family: var(--fonte1);/*Fonte padrão*/
 }
 
 header{
-    font-family: 'Sriracha', sans-serif;
+    font-family: var(--fonte2);
     background-color: black;/*Cor de fundo*/
     color: white; /* Cor da letra branca*/
     font-weight: bold;
@@ -20,6 +28,7 @@ header{
 }
 header h1{
     padding-top: 50px;/*Para ficar simetrico texto no meio*/
+    font-size: 10vw;/*Fonte corrige de acordo com tamanho da tela em 10 porcento*/
     
 }
 header p{
@@ -36,6 +45,12 @@ a:hover{
 section{
    padding-top: 10vh; /*Ele ganha 10 porcento de algura em relacao texto*/
    padding-bottom: 10vh;/*Ele ganha 10 porcento embaixo do texto*/
+   font-family: var(--fonte3);
+   font-size: 4vw;/*5 porcento da view port largura*/
+}
+
+section > p {
+    padding-bottom: 2em;/*Espaço nos paragrafos em sections normais com dois poemas*/
 }
 
 section.normal{
@@ -46,17 +61,29 @@ section.normal{
 }
 
 section.imagem{
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.225);
     color:white;
     padding-left: 30px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514); /*Faz pequena sombra na imagem fica top*/
+    background-attachment: fixed;/*Depois de tudo configurado so usar este comando pra realizar efeito paralax , ou seja fixando as duas imagems no fundo seccao img01 e img02*/
 }
 section.imagem > p {
-    width: 400px; /*Largura de 400 pix texto*/
-    background-color: rgba(0, 0, 0, 0.225);/*Cor de fundo transparente*/
+    display: inline-block;/*vai transformar uma caixa que adpta ao conteudo*/
+    padding: 5px;/*Pra essa caixa que adapta ao texto nao ficar colada ao texto*/
+    background-color: rgba(0, 0, 0, 0.514);/*Cor de fundo transparente*/
+    text-shadow: 1px 1px 0px black;/*Sombra no texto de fundo*/
 }
-body{
-    font-family: 'Sriracha', sans-serif;
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;/*Corrigir tamanho da imagem que esta muito grande*/
 }
+section#img02{
+   background-image: url(imagens/background002.jpg);
+   background-position: right center;
+   background-size: cover;/*Corrigir tamanho da imagem que esta muito grande*/
+}
+
 header p{
     text-align: center;
 }
