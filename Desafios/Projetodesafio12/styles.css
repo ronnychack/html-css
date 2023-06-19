@@ -1,27 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+*{
+    margin: 0px;/*Resetar as configurações padrões do html acaba ficando tudo junto*/
+    padding: 0px; /*Resetar as configuraçoes padrões do html*/
+}
+
+html, body{
+    min-height: 100vh;/*Tamanho minimo da view port da altura como termina com h(110vh) é altura o w e largura */
+    background-color: darkgray;/*Cor de fundo*/
+}
 
 header{
     font-family: 'Sriracha', sans-serif;
-    background-color: rgb(0, 195, 255);
+    background-color: black;/*Cor de fundo*/
+    color: white; /* Cor da letra branca*/
     font-weight: bold;
-    width:auto;
-    
+    text-align: center;
 }
 header h1{
-    text-align: center;
+    padding-top: 50px;/*Para ficar simetrico texto no meio*/
+    
 }
 header p{
-    text-align: center;
-    text-decoration: none;
+    padding-bottom: 50px;/*Fica simetrico texto no meio */
 }
-header a {
-    text-decoration: none;
+a {
+    text-decoration: none;/*Remove sublinhado do  link*/
 }
-header a:hover{
-    text-decoration: underline;
+a:hover{
+    text-decoration: underline;/*fica sublinhado ao passar o mouse*/
 
+}
+ /*Section toda para realizar efeito paralax*/
+section{
+   padding-top: 10vh; /*Ele ganha 10 porcento de algura em relacao texto*/
+   padding-bottom: 10vh;/*Ele ganha 10 porcento embaixo do texto*/
+}
+
+section.normal{
+    background-color: white; /*Cor de fundo secçao normal branca*/
+    color:black;/*Cor de fundo da secção preta , vai diminuindo junto com navegador*/
+    line-height: 2em; /*Espaço entre as linhas do texto*/
+    padding-left: 30px;  /*faz um tab no texto pra esquerda*/
+}
+
+section.imagem{
+    background-color: blue;
+    color:white;
+    padding-left: 30px;
+}
+section.imagem > p {
+    width: 400px; /*Largura de 400 pix texto*/
+    background-color: rgba(0, 0, 0, 0.225);/*Cor de fundo transparente*/
 }
 body{
     font-family: 'Sriracha', sans-serif;
@@ -31,4 +62,9 @@ header p{
 }
 h1 {
     font-family: 'Bebas Neue', sans-serif;
+}
+footer{
+    background-color: black;/* Cor de fundo preto*/
+    text-align: center; /*texto centralizado*/
+    color:white /*Cor da fonte branca*/
 }
