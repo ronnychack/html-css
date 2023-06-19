@@ -7,15 +7,29 @@
     <style>
         body {
             height: 100vh;/*Utilizar caixa toda do seu site view port*/
+
             background-color: black;/*fundo preto  porque se servidor for lento ajuda carregar site cliente espera mais pouco  ja que servidor está lento*/
+
             background-image: url(imagens/wallpaper002.jpg);/*imagem de fundo*/
+
             background-position: center center;/*Colocar apenas uma imagem sem repetir no centro*/
+
             background-repeat: no-repeat;/*Não repetir a imagem varias vezes fica somente uma*/
+
             background-size: cover;/*Ele tenta mostra imagem sem corte uma determinada resolucao de tela*/
+
+            background-attachment:fixed ;/* attachment vinculo ou seja , imagem nao quebra e rola apenas texto dentro da main, so funciona cover com fixed e tambem expreme o texto quando diminui. */
+
+            
+            /* Possivel de declara tudo em uma so linha chamado ShortHand
+                Seguinte ordem
+                color >image > position > repeat > [size] > attachment
+            */
+            /*background: black url(imagens/wallpaper002.jpg) center center/cover no-repeat fixed;*/
         }
         main {
             background-color: white;/* imagem de fundo aonde está texto*/
-            width: 400px;/*tamanho da box main*/
+            max-width: 400px;/*largura maxima do site no caso texto*/
             padding: 10px; /*preenchimento da box em relacao ao texto*/
             margin: auto;/*centralizando o texto na box*/
             border: 1px solid darkblue; /*cor da borda*/
@@ -26,6 +40,8 @@
 <body>
     <main>
          <h1>   Teste de imagem de fundo</h1>
+         <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa tenetur mollitia molestiae dicta corrupti veritatis quo, esse repudiandae iusto. Facere in cumque iste voluptates alias qui quos adipisci possimus> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos modi hic! Ipsum blanditiis saepe officia deserunt sapiente repudiandae quos qui quas dolor aspernatur optio, voluptatum esse excepturi accusantium velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, quisquam adipisci reprehenderit amet, in quis error veniam placeat eos eveniet earum qui, illo maxime unde deleniti tempore ullam expedita sapiente!</P>
+         <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa tenetur mollitia molestiae dicta corrupti veritatis quo, esse repudiandae iusto. Facere in cumque iste voluptates alias qui quos adipisci possimus> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos modi hic! Ipsum blanditiis saepe officia deserunt sapiente repudiandae quos qui quas dolor aspernatur optio, voluptatum esse excepturi accusantium velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, quisquam adipisci reprehenderit amet, in quis error veniam placeat eos eveniet earum qui, illo maxime unde deleniti tempore ullam expedita sapiente!</P>
          <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa tenetur mollitia molestiae dicta corrupti veritatis quo, esse repudiandae iusto. Facere in cumque iste voluptates alias qui quos adipisci possimus> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos modi hic! Ipsum blanditiis saepe officia deserunt sapiente repudiandae quos qui quas dolor aspernatur optio, voluptatum esse excepturi accusantium velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, quisquam adipisci reprehenderit amet, in quis error veniam placeat eos eveniet earum qui, illo maxime unde deleniti tempore ullam expedita sapiente!</P>
          <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa tenetur mollitia molestiae dicta corrupti veritatis quo, esse repudiandae iusto. Facere in cumque iste voluptates alias qui quos adipisci possimus> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos modi hic! Ipsum blanditiis saepe officia deserunt sapiente repudiandae quos qui quas dolor aspernatur optio, voluptatum esse excepturi accusantium velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, quisquam adipisci reprehenderit amet, in quis error veniam placeat eos eveniet earum qui, illo maxime unde deleniti tempore ullam expedita sapiente!</P>
          <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa tenetur mollitia molestiae dicta corrupti veritatis quo, esse repudiandae iusto. Facere in cumque iste voluptates alias qui quos adipisci possimus> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eos modi hic! Ipsum blanditiis saepe officia deserunt sapiente repudiandae quos qui quas dolor aspernatur optio, voluptatum esse excepturi accusantium velit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, quisquam adipisci reprehenderit amet, in quis error veniam placeat eos eveniet earum qui, illo maxime unde deleniti tempore ullam expedita sapiente!</P>
