@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centralização vertical de caixas</title>
+    <title>Centralização vertical de caixas de um elemento na tela</title>
     <style>
-        
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;/*Tamanho fica 100 porcento na tela somente uma imagem*/
+
+            position: relative;/*Todo posicinamento de um box e relativo por padrao apenas para lembrar*/
+            height: 96vh;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;/*Tamanho fica 100 porcento na tela somente uma imagem*/
+            
+            position: absolute;/*Conteudo fica dentro da outra box deve ser absoluto*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left:50%; /*Como se ativou absolute agora consegue centralizar a imagem no centro configurando pixels*/
+            top:50%;/*Absolute ativo funciona em relacao ao top*/
+            
+            transform: translate(-50%,-50%);/*controla box colocando 50 ela centraliza com container certinho*/
+
+        }
     </style>
 </head>
 <body>
-    
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
