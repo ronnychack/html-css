@@ -6,24 +6,25 @@
     <title>Tabela 2</title>
     <style>
 
- table{
+table{
        width: 500px;
        border-collapse: collapse;
 }
- td, th{
+td, th{
         border: 1px solid black;
         padding: 8px;
-        text-align: right;
+        text-align: r;
+}
+td.num {
+    text-align: right;
 }
 thead,tfoot{
     background-color: gray;
     color:white;
 }
 
-td.mum{
-    text-align: right;
-}
-    </style>
+</style>
+
 </head>
 <body>
     <h1>Tabelas Grandes</h1>
@@ -39,15 +40,15 @@ td.mum{
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 168 791</td>
+                <td class="num">21 168 791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 264 943</td>    
+                <td class="num">17 264 943</td>    
             </tr>
 
         </tbody>
@@ -55,7 +56,7 @@ td.mum{
         <tfoot>
             <tr>
                 <th>Total de Habitantes</th>
-                <td><strong>1433203205400</strong></td>
+                <td class="num"><strong>1433203205400</strong></td>
             </tr>
         </tfoot>
 
