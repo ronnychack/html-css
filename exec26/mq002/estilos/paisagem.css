@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Aparelho deitado (landscape)*/
+
+body{
+    background-color: orange;/*Muda cor quando estiver deitado*/
+    background-image: url(../imagens/cev-landscape.jpg);/*Fundo da image  muda,-image ele mantem fundo laranja, se colocar somente background fundo fica preto*/
+    background-repeat: no-repeat;
+}

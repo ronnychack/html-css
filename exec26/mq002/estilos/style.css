@@ -4,4 +4,16 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;/*Tamanho da tela*/
+    height: 100vh; /*Tamanho da tela*/
+    background-color: black; /* Fundo de tela*/
+}
+h1{
+    color: white; /*Letra do texto contida em h1*/
+    text-shadow: 3px 3px 0px red;/*Colocando sobra no texto*/
+    padding: 10px;
 }
