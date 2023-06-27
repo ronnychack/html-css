@@ -11,6 +11,8 @@ html, body{
     width: 100vw;/*Tamanho da tela*/
     height: 100vh; /*Tamanho da tela*/
     background-color: black; /* Fundo de tela*/
+    background-size: contain;/*Utilizado cover mas foto em pe fica cortada utilizamos neste caso contain cabe foto inteira em pe ajustada*/
+    background-repeat: no-repeat;/*Eu fiz retrato e paisagem correto somente aqui tanto em outro precisa do comando*/
 }
 h1{
     color: white; /*Letra do texto contida em h1*/
