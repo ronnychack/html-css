@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Estilo para Impressora*/
+
+ *{
+    margin: 10px;
+    padding: 10px;
+ }
+ html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+ }
+ menu {
+     display: none;/* Menu  nao será exibido ao imprimir*/
+ }
+ article{
+    width: 100%; /* Irá ocupar a largura toda para impressora*/
+ }
+
+ article::after{
+    content: 'Esse artigo foi impresso através do site peido.com.br'; /* Coloca info no final do artigo apenas na impressão*/        
+ }

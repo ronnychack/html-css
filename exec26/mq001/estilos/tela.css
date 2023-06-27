@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Estilo para telas*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header{
+    background-color: rgb(173, 214, 200);
+}
+header > h1 {
+    text-align: center;/* Texto centralizado*/
+}
+menu ul{
+    list-style-type: none;/* Perde a bolinha da lista pre definido*/
+    background-color: cyan;
+}
+menu li {
+    display: inline-block;/* Para lista ficar horizontal ou seja um do lado do outro, porque default ela é vertical*/
+    padding: 10px; /* Espaçamento entre os texto de 10px*/
+    background-color: rgb(38, 0, 255);
+    color: red ;/* Cor da fonte*/
+}
+article{
+    width: 600px;
+    display: block;/* Para poder centralizar o texto*/
+    margin: auto;/* Este comando mais display block deixa texto no centro*/
+}
+article > p{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    color: blue;
+    background-color: aqua;
+}
