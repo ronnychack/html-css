@@ -2,8 +2,11 @@
 
 /* Aparelho deitado (landscape)*/
 
-body{
-    background-color: orange;/*Muda cor quando estiver deitado*/
-    background-image: url(../imagens/cev-landscape.jpg);/*Fundo da image  muda,-image ele mantem fundo laranja, se colocar somente background fundo fica preto*/
-    background-position: left bottom;/*Ele quer que imagem fique grudada na parte da esquerda e embaixo do site*/
+body {
+    background-color: orange;
+    /*Muda cor quando estiver deitado*/
+    background-image: url(../imagens/cev-landscape.jpg);
+    /*Fundo da image  muda,-image ele mantem fundo laranja, se colocar somente background fundo fica preto*/
+    background-position: left bottom;
+    /*Ele quer que imagem fique grudada na parte da esquerda e embaixo do site*/
 }

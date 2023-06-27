@@ -1,40 +1,59 @@
 @charset "UTF-8";
-         /*Declarações gerais*/
-         @charset "UTF-8";
+/*Declarações gerais*/
+@charset "UTF-8";
 
-        /*Configurações Gerais*/
-        *{
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        html, body{
-            width: 100vw;/*Tamanho da tela*/
-            height: 100vh; /*Tamanho da tela*/
-            background-color: black; /* Fundo de tela*/
-            background-size: contain;/*Utilizado cover mas foto em pe fica cortada utilizamos neste caso contain cabe foto inteira em pe ajustada*/
-            background-repeat: no-repeat;/*Eu fiz retrato e paisagem correto somente aqui tanto em outro precisa do comando*/
-        }
-        h1{
-            color: white; /*Letra do texto contida em h1*/
-            text-shadow: 3px 3px 0px red;/*Colocando sobra no texto*/
-            padding: 10px;
-        }  
-         /*Declaraçoes retrato*/
-         @media screen and (orientation:portrait) {
-        /* Aparelho em pé (portrait)*/
-        body{
-            background-color: yellow;/*Muda cor de fundo quando estiver em pe*/
-            background-image: url(../imagens/cev-portrait.jpg);
-            background-position: center bottom;/*Mante a imagem de fundo no centro e embaixo*/
-        }
-         }
-         @media screen and (orientation:landscape){
-            /*Declarações paisagem*/
-            /* Aparelho deitado (landscape)*/
-            body{
-                background-color: orange;/*Muda cor quando estiver deitado*/
-                background-image: url(../imagens/cev-landscape.jpg);/*Fundo da image  muda,-image ele mantem fundo laranja, se colocar somente background fundo fica preto*/
-                background-position: left bottom;/*Ele quer que imagem fique grudada na parte da esquerda e embaixo do site*/
-            }
-         }
+/*Configurações Gerais*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    /*Tamanho da tela*/
+    height: 100vh;
+    /*Tamanho da tela*/
+    background-color: black;
+    /* Fundo de tela*/
+    background-size: contain;
+    /*Utilizado cover mas foto em pe fica cortada utilizamos neste caso contain cabe foto inteira em pe ajustada*/
+    background-repeat: no-repeat;
+    /*Eu fiz retrato e paisagem correto somente aqui tanto em outro precisa do comando*/
+}
+
+h1 {
+    color: white;
+    /*Letra do texto contida em h1*/
+    text-shadow: 3px 3px 0px red;
+    /*Colocando sobra no texto*/
+    padding: 10px;
+}
+
+/*Declaraçoes retrato*/
+@media screen and (orientation:portrait) {
+
+    /* Aparelho em pé (portrait)*/
+    body {
+        background-color: yellow;
+        /*Muda cor de fundo quando estiver em pe*/
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+        /*Mante a imagem de fundo no centro e embaixo*/
+    }
+}
+
+@media screen and (orientation:landscape) {
+
+    /*Declarações paisagem*/
+    /* Aparelho deitado (landscape)*/
+    body {
+        background-color: orange;
+        /*Muda cor quando estiver deitado*/
+        background-image: url(../imagens/cev-landscape.jpg);
+        /*Fundo da image  muda,-image ele mantem fundo laranja, se colocar somente background fundo fica preto*/
+        background-position: left bottom;
+        /*Ele quer que imagem fique grudada na parte da esquerda e embaixo do site*/
+    }
+}
